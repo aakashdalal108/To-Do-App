@@ -38,8 +38,11 @@ const addTodo = () => {
     getlist = loadTodo()
 
     let newTodo = input.value
-
-    if (newTodo.length != 0) {
+    
+    if(newTodo == ""){
+        alert("write somthing to add..")
+    }
+    else {
 
 
         getlist.push(newTodo)
